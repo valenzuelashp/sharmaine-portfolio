@@ -1,16 +1,56 @@
-# React + Vite
+# 👩‍💻 Sharmaine Valenzuela | Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![EmailJS](https://img.shields.io/badge/EmailJS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-Currently, two official plugins are available:
+## 📌 Overview
+Welcome to my personal portfolio repository! This website was designed and built to showcase my projects, skills, and journey as an IT student and aspiring Frontend Developer. It features a modern, responsive design and serves as a central hub for potential clients and employers to connect with me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Key Features
+* **Responsive Design:** Fully optimized for desktop, tablet, and mobile devices.
+* **Modern UI/UX:** Built with **Tailwind CSS** for a clean, professional aesthetic.
+* **Functional Contact Form:** Integrated with **EmailJS** to receive messages directly to my inbox without a backend server.
+* **Smooth Animations:** Utilized **AOS (Animate On Scroll)** for engaging user interaction.
+* **Project Showcase:** A dedicated section to display my recent work and repositories.
 
-## React Compiler
+## 🛠️ Tech Stack
+* **Frontend Library:** React.js
+* **Styling:** Tailwind CSS
+* **Icons:** React Icons (FontAwesome, Material Design)
+* **Form Handling:** EmailJS
+* **Animations:** AOS (Animate On Scroll)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Installation & Setup
+If you want to run this project locally, follow these steps:
 
-## Expanding the ESLint configuration
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/valenzuelashp/sharmaine-portfolio.git](https://github.com/valenzuelashp/sharmaine-portfolio.git)
+    ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2.  **Navigate to the project directory:**
+    ```bash
+    cd sharmaine-portfolio
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+4.  **Start the development server:**
+    ```bash
+    npm start
+    ```
+    The app should run on `http://localhost:3000`.
+
+## 📬 Get in Touch
+I am currently open to new opportunities and collaborations. Feel free to reach out!
+
+* **Email:** [valenzuela.shp@gmail.com](mailto:valenzuela.shp@gmail.com)
+* **LinkedIn:** [View Profile](https://linkedin.com) *(Update this link)*
+* **Location:** Bacoor City, Cavite
+
+---
+*© 2026 Sharmaine Valenzuela. All Rights Reserved.*
