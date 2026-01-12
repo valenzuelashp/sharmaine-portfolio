@@ -49,7 +49,8 @@ If you want to run this project locally, follow these steps:
 I am currently open to new opportunities and collaborations. Feel free to reach out!
 
 * **Email:** [valenzuela.shp@gmail.com](mailto:valenzuela.shp@gmail.com)
-* **LinkedIn:** [View Profile](https://linkedin.com) *(Update this link)*
+* **LinkedIn:** [View Profile](https://www.linkedin.com/in/sharmaine-hannah-valenzuela-238609383/)
+* **My Website** [Sharmaine Hannah Valenzuela](https://sharmainehannahvalenzuela.vercel.app/)
 * **Location:** Bacoor City, Cavite
 
 ---
