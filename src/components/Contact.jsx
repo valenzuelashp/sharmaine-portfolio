@@ -16,7 +16,7 @@ const Contact = () => {
       icon: <FaLinkedin />, 
       title: "LinkedIn", 
       content: "View Professional Profile", 
-      link: "https://linkedin.com" // Add your actual LinkedIn URL
+      link: "https://www.linkedin.com/in/sharmaine-hannah-valenzuela-238609383/" // Add your actual LinkedIn URL
     },
     { 
       icon: <FaGithub />, 
