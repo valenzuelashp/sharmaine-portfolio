@@ -88,7 +88,7 @@ const Hero = ({ darkMode }) => {
 
             {/* GITHUB */}
             <a 
-              href="https://github.com/Sharmaine2005" 
+              href="https://github.com/valenzuelashp" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="p-3 border border-gray-400 dark:border-gray-500 rounded-full hover:border-gray-900 dark:hover:border-white hover:text-gray-900 dark:hover:text-white transition shadow-lg text-gray-700 dark:text-gray-300 hover:-translate-y-1"

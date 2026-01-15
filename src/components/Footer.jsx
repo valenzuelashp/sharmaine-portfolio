@@ -77,7 +77,7 @@ const Footer = () => {
              </a>
 
              {/* Card 3: GitHub */}
-             <a href="https://github.com/Sharmaine2005" 
+             <a href="https://github.com/valenzuelashp" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 p-4 bg-white dark:bg-white/5 backdrop-blur-sm border border-gray-200 dark:border-white/10 rounded-2xl shadow-lg dark:shadow-none hover:border-gray-500/50 hover:bg-gray-50 dark:hover:bg-white/10 transition-all duration-300 cursor-pointer"
