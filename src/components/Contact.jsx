@@ -22,7 +22,7 @@ const Contact = () => {
       icon: <FaGithub />, 
       title: "GitHub", 
       content: "Check My Repositories", 
-      link: "https://github.com" // Add your actual GitHub URL
+      link: "https://github.com/valenzuelashp" // Add your actual GitHub URL
     },
     { 
       icon: <FaMapMarkerAlt />, 
