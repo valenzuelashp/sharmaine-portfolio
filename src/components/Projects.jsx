@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Tilt from 'react-parallax-tilt'; 
-import { FaExternalLinkAlt, FaTrophy, FaHistory, FaChevronDown, FaAward, FaEye, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaTrophy, FaHistory, FaChevronDown, FaAward, FaEye, FaTimes, FaChevronLeft, FaChevronRight, FaStar } from 'react-icons/fa';
 import { PROJECTS, VISIBLE_AWARDS, HIDDEN_AWARDS } from '../constants';
 
 const Projects = () => {
@@ -57,6 +57,17 @@ const Projects = () => {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
+              
+              {/* --- NEW: AWARD BADGE OVERLAY --- */}
+              {project.award && (
+                <div className="absolute top-4 right-4 z-20 animate-pulse">
+                  <div className="bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-lg flex items-center gap-1 border border-yellow-200">
+                    <FaTrophy size={12} />
+                    {project.award}
+                  </div>
+                </div>
+              )}
+
               {/* Subtle Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden dark:block pointer-events-none z-0"></div>
 
@@ -83,7 +94,7 @@ const Projects = () => {
                 </div>
 
                 {/* TEXT CONTENT */}
-                <div className="flex flex-col">
+                <div className="flex flex-col pt-2">
                   <h3 className="text-2xl font-bold mb-1 text-gray-900 dark:text-white leading-tight">{project.title}</h3>
                   <p className="text-xs text-primary mb-3 uppercase tracking-widest font-bold">{project.role}</p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed line-clamp-3">
@@ -173,7 +184,7 @@ const Projects = () => {
         </div>
       )}
 
-      {/* --- AWARDS SECTION (Unchanged) --- */}
+      {/* --- AWARDS SECTION --- */}
       <div className="max-w-6xl mx-auto" data-aos="fade-up">
         {/* RECENT HONORS */}
         <div className="relative mb-8">

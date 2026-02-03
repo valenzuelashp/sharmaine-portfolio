@@ -9,6 +9,11 @@ import closedopenImg1 from '../assets/closedopen1.png';
 import closedopenImg2 from '../assets/closedopen2.png';
 import closedopenImg3 from '../assets/closedopen3.png';
 
+// --- FIXED SECTION: Unique names for each image ---
+import eclipseImg1 from '../assets/eclipse1.png'; 
+import eclipseImg2 from '../assets/eclipse2.png'; 
+import eclipseImg3 from '../assets/eclipse3.png'; 
+
 export const SCHOOLS = [
   { 
     name: "Technological University of the Philippines", 
@@ -34,6 +39,7 @@ export const PROJECTS = [
   {
     title: "ECOality", 
     role: "UI/UX Designer",
+    award: "2nd Placer", 
     images: [
       ecoalityImg1, 
       ecoalityImg2, 
@@ -46,6 +52,7 @@ export const PROJECTS = [
   {
     title: "Closed; Open",
     role: "Worst Generation Team",
+    award: "2nd Placer", 
     images: [
       closedopenImg1,
       closedopenImg2,
@@ -54,22 +61,36 @@ export const PROJECTS = [
     desc: "A collaborative visual novel focusing on choice-based gameplay and interactive storytelling created with Ren'Py.",
     tags: ["Ren'Py", "Storytelling", "Python"],
     link: "https://sirdroffilc.itch.io/closedopen"
+  },
+  {
+    title: "Eclipse",
+    role: "Level Designer & Dev (Kamiyon Studios)",
+    award: "Most Fun Game", 
+    images: [
+      eclipseImg1, // Using the unique variables
+      eclipseImg2, 
+      eclipseImg3
+    ], 
+    desc: "A Global Game Jam entry developed in 48 hours at CIIT Philippines. A fast-paced game where I served as Level Designer and Developer.",
+    tags: ["Global Game Jam", "Level Design", "Game Dev"],
+    link: "https://kamiyon-studio.itch.io/eclipse"
   }
 ];
 
 // --- AWARDS DATA (Sorted Latest -> Oldest) ---
 
 export const VISIBLE_AWARDS = [
+  "Most Fun Game - Global Game Jam 2026 (CIIT)", 
   "UI/UX Design Core Lead - GDG on Campus (2026)", 
   "2nd Placer - THE FORGE GAMEATHON 2026 (PUP)",
   "2nd Placer - UI/UX Hawk-a-thon 2025 (TUP-Manila)",
   "President's Lister - 2nd Year, 2nd Sem (S.Y. 2024-2025)",
   "Dean's Lister - 2nd Year, 1st Sem (S.Y. 2024-2025)",
-  "President's Lister - 1st Year, 2nd Sem (S.Y. 2023-2024)",
-  "President's Lister - 1st Year, 1st Sem (S.Y. 2023-2024)"
+  "President's Lister - 1st Year, 2nd Sem (S.Y. 2023-2024)"
 ];
 
 export const HIDDEN_AWARDS = [
+  "President's Lister - 1st Year, 1st Sem (S.Y. 2023-2024)",
   "Gold Awardee Intramural Chess - Grade 12 (2022-2023)",
   "Gold Academic Awardee - Grade 11-12 (2021-2023)",
   "With High Honors - Grade 9-10 (2019-2021)",
