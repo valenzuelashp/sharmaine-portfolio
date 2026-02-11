@@ -1,6 +1,4 @@
-// src/constants/index.js
-
-// 1. Import your images
+// --- PROJECT IMAGES IMPORT ---
 import ecoalityImg1 from '../assets/ecoality1.png'; 
 import ecoalityImg2 from '../assets/ecoality2.png'; 
 import ecoalityImg3 from '../assets/ecoality3.png'; 
@@ -9,11 +7,15 @@ import closedopenImg1 from '../assets/closedopen1.png';
 import closedopenImg2 from '../assets/closedopen2.png';
 import closedopenImg3 from '../assets/closedopen3.png';
 
-// --- FIXED SECTION: Unique names for each image ---
 import eclipseImg1 from '../assets/eclipse1.png'; 
 import eclipseImg2 from '../assets/eclipse2.png'; 
 import eclipseImg3 from '../assets/eclipse3.png'; 
 
+import gdgocImg1 from '../assets/gdgoc1.png';
+import gdgocImg2 from '../assets/gdgoc2.png';
+import gdgocImg3 from '../assets/gdgoc3.png';
+
+// --- EDUCATION DATA (Sorted Latest -> Oldest) ---
 export const SCHOOLS = [
   { 
     name: "Technological University of the Philippines", 
@@ -36,6 +38,19 @@ export const SCHOOLS = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "GDGOC-TUP Manila", 
+    role: "UI/UX Design Core Lead",
+    award: "Core Lead",
+    images: [
+      gdgocImg1,
+      gdgocImg2,
+      gdgocImg3
+    ], 
+    desc: "The official website for GDG on Campus TUP-Manila. Sponsored by Technomancer (providing free hosting & domain). As the UI/UX Lead, I spearheaded the design of this community platform.", 
+    tags: ["UI/UX Design", "Community", "Web Design"],
+    link: "https://gdgoctupm.com/",
+  },
   {
     title: "ECOality", 
     role: "UI/UX Designer",
