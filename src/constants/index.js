@@ -15,6 +15,10 @@ import gdgocImg1 from '../assets/gdgoc1.png';
 import gdgocImg2 from '../assets/gdgoc2.png';
 import gdgocImg3 from '../assets/gdgoc3.png';
 
+import cosmopolImg1 from '../assets/cosmopol1.png'; 
+import cosmopolImg2 from '../assets/cosmopol2.png'; 
+import cosmopolImg3 from '../assets/cosmopol3.png';
+
 // --- EDUCATION DATA (Sorted Latest -> Oldest) ---
 export const SCHOOLS = [
   { 
@@ -47,9 +51,22 @@ export const PROJECTS = [
       gdgocImg2,
       gdgocImg3
     ], 
-    desc: "The official website for GDG on Campus TUP-Manila. Sponsored by Technomancer (providing free hosting & domain). As the UI/UX Lead, I spearheaded the design of this community platform.", 
+    desc: "The official website for GDG on Campus TUP-Manila. Sponsored by Technomancer (providing free hosting & domain).", 
     tags: ["UI/UX Design", "Community", "Web Design"],
     link: "https://gdgoctupm.com/",
+  },
+{
+    title: "Cosmopol", 
+    role: "Frontend Developer", 
+    award: "Client Project",
+    images: [
+      cosmopolImg1,
+      cosmopolImg2,
+      cosmopolImg3
+    ], 
+    desc: "A corporate website for a premium automotive solutions company. Features a dynamic partner branch locator, and product showcase for ceramic coatings.", 
+    tags: ["React", "Tailwind CSS", "Automotive"], // Specific tags
+    link: "https://cosmopol.netlify.app/",
   },
   {
     title: "ECOality", 

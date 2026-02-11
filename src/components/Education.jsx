@@ -1,87 +1,94 @@
 import React from 'react';
 
+// 1. IMPORT YOUR IMAGES HERE
+// (Make sure the file extensions match your actual files, e.g., .png or .jpg)
+import education1 from '../assets/education1.png';
+import education2 from '../assets/education2.png';
+import education3 from '../assets/education3.jpg';
+
 const Education = () => {
-  // DATA INLINED (SAFE MODE)
   const SCHOOLS = [
     { 
       name: "Technological University of the Philippines", 
       period: "2023-Present", 
       loc: "Ermita, Manila", 
-      degree: "Bachelor of Science in Information Technology" 
+      degree: "Bachelor of Science in Information Technology",
+      logo: education1 // Use the imported variable
     },
     { 
       name: "St. Mary Magdalene School", 
       period: "2021-2023", 
       loc: "Kawit, Cavite", 
-      degree: "Senior High School" 
+      degree: "Senior High School",
+      logo: education2 // Use the imported variable
     },
     { 
       name: "General Emilio Aguinaldo National HS", 
       period: "2017-2021", 
       loc: "Imus, Cavite", 
-      degree: "Junior High School" 
+      degree: "Junior High School",
+      logo: education3 // Use the imported variable
     }
   ];
 
   return (
-    <section id="education" className="py-24 px-4 relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-red-500/20 dark:via-red-900/50 to-transparent -translate-y-1/2 hidden md:block"></div>
+    <section id="education" className="py-24 px-4 relative overflow-hidden bg-gray-50 dark:bg-black transition-colors duration-300">
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <h2 className="text-4xl font-bold mb-20 text-center text-gray-900 dark:text-white" data-aos="fade-down">
+        {/* Header */}
+        <h2 className="text-4xl font-bold mb-24 text-center text-gray-900 dark:text-white" data-aos="fade-down">
           My <span className="text-primary">Journey</span>
         </h2>
 
-        <div className="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-4 relative">
+        {/* CARD LAYOUT */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-20 gap-x-8 px-4">
           
-          {/* THE CONNECTING LINE (Desktop Only) */}
-          <div className="absolute top-[20px] left-0 w-full h-1 bg-gray-200 dark:bg-gray-800 hidden md:block rounded-full overflow-hidden">
-             <div className="w-full h-full bg-gradient-to-r from-transparent via-primary to-transparent opacity-30 animate-pulse"></div>
-          </div>
-
           {SCHOOLS.map((school, index) => (
             <div 
               key={index} 
-              className="relative w-full md:w-1/3 group" 
               data-aos="fade-up" 
-              data-aos-delay={index * 200}
+              data-aos-delay={index * 150}
+              className="group relative bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-[1rem] p-8 pt-16 text-center shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
-              {/* 1. THE NODE (Glowing Dot) */}
-              <div className="hidden md:flex justify-center mb-6 relative">
-                 {/* Outer Glow */}
-                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary/20 rounded-full blur-md group-hover:bg-primary/50 transition duration-500"></div>
-                 {/* The Core */}
-                 <div className="w-4 h-4 bg-white dark:bg-gray-900 border-2 border-primary rounded-full relative z-10 group-hover:scale-150 transition duration-300 shadow-[0_0_10px_#FF0000]"></div>
+              
+              {/* --- 1. THE FLOATING LOGO (Updated for Images) --- */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-white dark:bg-gray-900 border-[8px] border-gray-50 dark:border-black flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                {/* IMAGE TAG */}
+                <img 
+                  src={school.logo} 
+                  alt={`${school.name} logo`} 
+                  className="w-full h-full object-cover" 
+                />
               </div>
 
-              {/* 2. THE CARD (Day Mode: White & Shadow | Dark Mode: Glass & Glow) */}
-              <div className="bg-white dark:bg-black/40 backdrop-blur-md border border-gray-200 dark:border-white/5 p-6 rounded-xl shadow-lg dark:shadow-none hover:border-primary/50 transition-all duration-300 group-hover:-translate-y-2 relative overflow-hidden">
+              {/* --- 2. THE CONTENT --- */}
+              <div className="flex flex-col items-center gap-3">
                 
-                {/* Decorative Corner Accent */}
-                <div className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-bl from-primary/10 to-transparent -mr-6 -mt-6 rounded-full blur-xl group-hover:bg-primary/20 transition-colors"></div>
-
-                {/* Period Badge */}
-                <span className="inline-block py-1 px-3 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold tracking-widest uppercase mb-3">
+                {/* Year */}
+                <span className="text-sm font-bold tracking-widest text-gray-400 uppercase">
                   {school.period}
                 </span>
 
                 {/* School Name */}
-                <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100 mb-1 leading-tight group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white leading-tight min-h-[3.5rem] flex items-center justify-center">
                   {school.name}
                 </h3>
 
                 {/* Location */}
-                <p className="text-xs text-gray-500 dark:text-gray-400 mb-4 uppercase tracking-wide flex items-center gap-2">
-                   <span className="w-1 h-1 bg-primary rounded-full"></span> {school.loc}
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  {school.loc}
                 </p>
 
+                {/* Divider Line */}
+                <div className="w-12 h-1 bg-primary/20 rounded-full my-2 group-hover:bg-primary transition-colors"></div>
+
                 {/* Degree */}
-                <p className="text-sm font-medium text-gray-600 dark:text-gray-300 italic border-l-2 border-primary/30 pl-3 group-hover:border-primary transition-colors">
+                <p className="text-base font-medium text-primary">
                   {school.degree}
                 </p>
 
               </div>
+
             </div>
           ))}
 
