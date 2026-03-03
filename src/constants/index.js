@@ -43,7 +43,7 @@ export const SCHOOLS = [
 
 export const PROJECTS = [
   {
-    title: "GDGOC-TUP Manila", 
+    title: "GoogleDGOC-TUP Manila", 
     role: "UI/UX Design Core Lead",
     award: "Core Lead",
     images: [
@@ -51,7 +51,7 @@ export const PROJECTS = [
       gdgocImg2,
       gdgocImg3
     ], 
-    desc: "The official website for GDG on Campus TUP-Manila. Sponsored by Technomancer (providing free hosting & domain).", 
+    desc: "The official website for Google Developers Group on Campus TUP-Manila. Sponsored by Technomancer (providing free hosting & domain).", 
     tags: ["UI/UX Design", "Community", "Web Design"],
     link: "https://gdgoctupm.com/",
   },
